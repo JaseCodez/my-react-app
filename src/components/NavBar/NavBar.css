@@ -1,0 +1,38 @@
+.navbar {
+    width: 100%;
+    color: #e0def4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    bottom: 0;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 120px;
+}
+
+.nav {
+    background-color: #232136;
+    float: right;
+    color: #c4a7e7;
+    border-radius: 25px;
+    border: none;
+    height: 38px; 
+    width: 100px;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    overflow: hidden;
+    font: 20px;
+}
+
+.nav:hover {
+    opacity: 0.8;
+}

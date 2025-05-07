@@ -1,0 +1,26 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.home>img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.home>h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 40px; 
+    font-weight: 600;
+}
+
+.home>h1>span {
+    background: linear-gradient(270deg, #3e8fb0 10%, #eb6f92 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
