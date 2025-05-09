@@ -2,19 +2,31 @@ import './NavBar.css'
 
 function NavBar() {
     return (
-        <div className='navbar'>
-            <h1>Jason Phan</h1>
-            <ul className='navmenu'>
-                <button className='nav'>Home</button>
-                <button className='nav'>About Me</button>
-                <button className='nav'>Projects</button>
-                <button className='nav'>CV</button>
-                <button className='nav'>Gym Schedule</button>
-                <button className='nav'>Contacts</button>
+        <nav className='nav'>
+            <a href='/' id='jason'>Jason Phan</a>
+            <ul >
+                <li className='item'>
+                    <a href='/Home'>Home</a>
+                </li>
+                <li className='item'>
+                    <a href='/About'>About Me</a>
+                </li>
+                <li className='item'>
+                    <a href='/Projects'>Projects</a>
+                </li>
+                <li className='item'>
+                    <a href='CV'>CV</a>
+                </li>
+                <li className='item'>
+                    <a href='/Gym Schedule'>Gym Schedule</a>
+                </li>
+                <li className='item'>
+                    <a href='/Contact'>Contact</a>
+                </li>
 
             </ul>
 
-        </div>
+        </nav>
     );
 }
 
