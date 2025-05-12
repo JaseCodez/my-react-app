@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 80px; 
+    margin: 80px 170px;
 }
 
 .home>img {
