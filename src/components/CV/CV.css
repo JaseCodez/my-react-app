@@ -1,0 +1,32 @@
+.cv-containter {
+    position: relative;
+}
+
+.cv {
+    object-fit: fill;
+    width: 700px;
+    height: auto;
+}
+
+.arrow {
+    height: auto; 
+    width: 40px;
+}
+
+.arrow-btn {
+    all: unset; 
+    display: block;
+    position: absolute;
+    top: 0; 
+    bottom: 0; 
+    padding: 1rem; 
+    cursor: pointer;
+}
+
+#next {
+    right: 0; 
+}
+
+#back {
+    left: 0;
+}

@@ -1,17 +1,25 @@
 import './Contact.css'
+import contact from '../../images/contact'
+
+interface Props {
+    name: string, 
+    content: string, 
+    icon: string, 
+    link: string, 
+
+}
 
 function Contact() {
     return (
         <div className='contact'>
-            <h1>Contact</h1>
+            <div className='link-container'>
+                {contact.map((contact: Props)=>{
+                    return <div className='contact-row'>
+                        <a className='contact-link' href={contact.link} target='_blank'><img className='icon' src={contact.icon}/></a>
+                        <a className='contact-link' href={contact.link} target='_blank'>{contact.content}</a>
+                    </div>
+                })}     
 
-            <div className='contact-info'>
-                <a href='https://github.com/JaseCodez'>Github </a>
-
-                <a href='https://www.linkedin.com/in/phanductuan/'>LinkedIn</a>
-
-                <a href='jase.phan@mail.utoronto.ca'>Mail</a>
-                <a>Phone</a>
             </div>
         </div>
     );

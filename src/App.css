@@ -1,6 +1,13 @@
 #root {
   margin: 0 auto;
   width: 100%;
+  max-width: fit-content;
   padding: 2rem;
   text-align: center;
+}
+
+.gym {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
 }

@@ -1,4 +1,25 @@
 .contact {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.contact-row {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    justify-items: center;
 }
