@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.1.6",
     "bootstrap": "^5.2.3",
     "my-react-app": "file:",
     "react": "^18.2.0",

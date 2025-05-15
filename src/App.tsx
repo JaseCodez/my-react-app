@@ -7,8 +7,16 @@ import CV from './components/CV/CV';
 import Projects from './components/Projects/Projects';
 import AboutMe from './components/AboutMe/AboutMe';
 import GymDay from './components/GymSchedule/GymDay';
+import workouts from './components/GymSchedule/Workout';
+
+interface Workout {
+  day: string, 
+  wo_style: string 
+  detailed_wo: string[]
+}
 
 function App() {
+  
   return (
   <div>
     <NavBar />
@@ -25,9 +33,11 @@ function App() {
 
     <HeaderTag tag={'Gym Schedule'}/>
     <div className="gym">
-      <GymDay wo_style='push' day='mon' detailed_wo={['3x12 pull ups', 'worl']}/>
-      <GymDay wo_style='push' day='mon' detailed_wo={['helo', '3x5 dips']}/>
-      <GymDay wo_style='push' day='mon' detailed_wo={['-1x1 squat', 'worl']}/>
+      {workouts.map((workout: Workout)=>{
+        return (<div>
+          <GymDay day={workout.day} wo_style={workout.wo_style} detailed_wo={workout.detailed_wo} />
+        </div>);
+      })}
 
     </div>
     <HeaderTag tag={'Contact'}/>
