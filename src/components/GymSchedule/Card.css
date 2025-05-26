@@ -9,5 +9,10 @@
     font-weight: 600;
     cursor: pointer;
     justify-content: space-between;
+    transition: 0.3s;
 }
 
+.card:hover {
+    background-color: #ea9d34;
+    transition: 0.3s;
+}

@@ -10,6 +10,14 @@
     max-width: 1000px;
 }
 
+.about-me-para span {
+     background: linear-gradient(270deg, #3e8fb0 10%, #eb6f92 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .about-me-img {
     height: auto;
     width: 400px;

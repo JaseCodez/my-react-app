@@ -20,7 +20,9 @@ function GymDay(workout: Props) {
     return (
     <div className="gym-day">
         <Card f={toggleModal} day={workout.day} wo_style={workout.wo_style}/>
-        <DetailedCard wo_style={workout.wo_style} detailed_wo={workout.detailed_wo}/>
+        <div className="absolute">
+            <DetailedCard wo_style={workout.wo_style} detailed_wo={workout.detailed_wo}/>
+        </div>
       
     </div>
 

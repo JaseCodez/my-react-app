@@ -40,8 +40,6 @@ function App() {
       })}
 
     </div>
-    <HeaderTag tag={'Contact'}/>
-    <Contact />
 
   </div>
   );

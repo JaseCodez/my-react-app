@@ -21,9 +21,6 @@ function NavBar() {
                     <li>
                         <a href='/Gym Schedule'>Gym Schedule</a>
                     </li>
-                    <li>
-                        <a href='/Contact'>Contact</a>
-                    </li>
 
                 </ul>
 

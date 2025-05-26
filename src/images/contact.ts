@@ -1,24 +1,25 @@
-import github from './github.png'
-import mail from './mail.png'
-import linkedin from './linkedin.png'
+import { FaLinkedin } from "react-icons/fa";
+import { VscGithub } from "react-icons/vsc";
+import { IoMailOutline } from "react-icons/io5";
+
 
 const contact = [
     {
         name: "Github", 
         content: "JaseCodez",
-        icon: github, 
+        Icon: VscGithub,
         link: "https://github.com/JaseCodez"
     }, 
     {
         name: "LinkedIn",
         content: "Duc Tuan Phan", 
-        icon: linkedin,
+        Icon: FaLinkedin,
         link: "https://www.linkedin.com/in/phanductuan/"
     }, 
     {
         name: "Mail", 
         content: "jase.phan@mail.utoronto.ca", 
-        icon: mail, 
+        Icon: IoMailOutline, 
         link: "mailto:jase.phan@mail.utoronto.ca"
     }
 ]

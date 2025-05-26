@@ -5,6 +5,8 @@ interface Props {
     detailed_wo: string[]
 }
 
+// [hello, world]
+
 function DetailedCard(workout: Props) {
     return (
         <div className='detailed'>

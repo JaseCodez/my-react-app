@@ -6,7 +6,7 @@
 
 .link-container {
     display: flex;
-    flex-direction: column;
+    gap: 2rem;
     justify-items: center;
 }
 
@@ -22,4 +22,12 @@
     color: inherit;
     align-items: center;
     justify-items: center;
+}
+
+.icon {
+    transition: .3s;
+}
+
+.icon:hover {
+    color: hsl(43, 100%, 68%);
 }

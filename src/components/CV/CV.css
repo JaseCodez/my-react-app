@@ -1,5 +1,7 @@
-.cv-containter {
+.cv-container {
     position: relative;
+    height: 100%;
+    display: inline-block;
 }
 
 .cv {
@@ -9,18 +11,17 @@
 }
 
 .arrow {
-    height: auto; 
-    width: 40px;
-}
-
-.arrow-btn {
     all: unset; 
     display: block;
     position: absolute;
-    top: 0; 
+    top: 50%; 
     bottom: 0; 
     padding: 1rem; 
     cursor: pointer;
+}
+
+.arrow:hover {
+    color: blue;
 }
 
 #next {

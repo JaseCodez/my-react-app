@@ -1,6 +1,7 @@
 import './AboutMe.css'
 import jason from '../../images/permed-jason.jpg'
-import yap from './AboutMeText'
+import yap1 from './AboutMeText'
+import yap2 from './knowledges'
 
 function AboutMe() {
     return (
@@ -10,7 +11,9 @@ function AboutMe() {
         </div>
 
         <div className="about-me-para">
-            <p>{yap}</p>
+            <p>Hey there! I'm <span>Jason Phan</span>{yap1}</p>
+            <br></br>
+            <p>{yap2}</p>
         </div>
 
        </div> 
