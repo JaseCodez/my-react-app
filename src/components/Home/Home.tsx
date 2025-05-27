@@ -4,9 +4,11 @@ import { TypeAnimation } from 'react-type-animation';
 import Contact from '../Contact/Contact';
 
 function PFP() {
-    const word: (string | number)[] = ['I\'m Jason Phan', 3000,
-            'I\'m a student at the University of Toronto', 3000,
-            'I\'m doing computer science', 3000]
+    const word: (string | number)[] = ['I\'m a student at the University of Toronto Mississauga', 3000,
+            'I\'m doing computer science', 3000,
+            'I\'m interested in Robotics', 3000, 
+            'I\'m interested in Low-level Programming', 3000,
+            'I\'m interested in Data Science', 3000]
     return (
         <div className='home'>
             <img src={pfp} alt='Avatar'></img>

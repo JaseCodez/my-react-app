@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import resume from './Jason_Resume.jpg'
-//import CoverLetter from './'
+import cover_letter from './coverletter.jpg'
 
-const cv = [
-    {
+const cv = {
+    'resume': {
         name: 'resume', 
         img: resume
+    }, 
+    'cover': {
+        name: 'cover_letter', 
+        img: cover_letter
     }
 
-]
+}
 
 export default cv;

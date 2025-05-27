@@ -1,33 +1,21 @@
 .cv-container {
     position: relative;
     height: 100%;
-    display: inline-block;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+
 }
 
 .cv {
     object-fit: fill;
     width: 700px;
     height: auto;
+    max-height: 910px;
 }
 
-.arrow {
-    all: unset; 
-    display: block;
-    position: absolute;
-    top: 50%; 
-    bottom: 0; 
-    padding: 1rem; 
-    cursor: pointer;
+#resume-container {
+    border: 5px solid red; 
 }
 
-.arrow:hover {
-    color: blue;
-}
 
-#next {
-    right: 0; 
-}
-
-#back {
-    left: 0;
-}
