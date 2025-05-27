@@ -31,3 +31,21 @@
 .icon:hover {
     color: hsl(43, 100%, 68%);
 }
+
+.contact-content {
+    margin: auto 0;
+    position: absolute;
+    left: 30px; 
+    right: 0; 
+    top: 70%;
+
+}
+
+.hover-contact {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    height: 3rem;
+    gap: 2rem;
+
+}
