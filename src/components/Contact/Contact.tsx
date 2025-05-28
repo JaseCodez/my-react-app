@@ -2,11 +2,12 @@ import './Contact.css'
 import contact from '../../images/contact'
 import { IconType } from 'react-icons';
 import { useState } from 'react'; 
+import React from 'react'; 
 
 interface Props {
     name: string, 
     content: string, 
-    Icon: IconType, 
+    Icon: IconType,
     link: string, 
 
 }
