@@ -8,11 +8,14 @@ interface Props {
 
 function Card(workout: Props) {
     return (
-        <div className="card" onClick={workout.f}>
-            <h1>{workout.day}</h1>
+        <button onClick={workout.f} className='card'>
+            <div>
+                <h1>{workout.day}</h1>
 
-            <p>{workout.wo_style}</p>
-        </div>
+                <p>{workout.wo_style}</p>
+            </div>
+
+        </button>
     );
 }
 

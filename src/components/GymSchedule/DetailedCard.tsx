@@ -1,26 +1,37 @@
 import './DetailedCard.css'
+import { IoMdClose } from "react-icons/io";
+
 
 interface Props {
     wo_style: string, 
     detailed_wo: string[]
+    f: ()=>void;
+    modal: boolean; 
 }
 
 // [hello, world]
 
 function DetailedCard(workout: Props) {
     return (
-        <div className='detailed'>
-            <h2>{workout.wo_style}</h2>
-             <div className='workout-container'>
-                {workout.detailed_wo.map((workout: string)=>{
-                    return <div className='contact-row'>
-                        <p>{workout}</p>
-                    </div>
-                })}     
+        <>
+            {workout.modal && (<div className='modal'>
+                <div className='overlay'>
+                    <div className="modal-content">
+                        <h1>{workout.wo_style}</h1>
+                        <ul>
+                            {workout.detailed_wo.map((wo: string)=>{
+                                return <li>{wo}</li>
+                            })}
 
-            </div>
-            
-        </div>
+                        </ul>
+                        <div className='close-btn' onClick={workout.f}>
+                            <IoMdClose className="close" size={25}/>
+                        </div>
+                    </div>
+
+                </div>
+            </div>)}
+        </>
     );
 }
 

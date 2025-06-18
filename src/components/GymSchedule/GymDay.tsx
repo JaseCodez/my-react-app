@@ -16,14 +16,23 @@ function GymDay(workout: Props) {
     const toggleModal = () => {
        setModal(!modal) 
     }
+            //<DetailedCard wo_style={workout.wo_style} detailed_wo={workout.detailed_wo}/>
+    if(modal) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
 
     return (
     <div className="gym-day">
         <Card f={toggleModal} day={workout.day} wo_style={workout.wo_style}/>
-        <div className="absolute">
-            <DetailedCard wo_style={workout.wo_style} detailed_wo={workout.detailed_wo}/>
-        </div>
+        <DetailedCard wo_style={workout.wo_style}
+         detailed_wo={workout.detailed_wo}
+         f={toggleModal}
+         modal={modal}
+         /> 
       
+        
     </div>
 
     ); 

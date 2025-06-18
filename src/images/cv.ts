@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import resume from './Jason_Resume.jpg'
 import cover_letter from './coverletter.jpg'
 
